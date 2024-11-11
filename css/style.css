@@ -1,0 +1,216 @@
+/* Body style */
+body {
+    background-color: #121212; /* Dark background for main body */
+    color: #e0e0e0; /* Light text color */
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Global horizontal line style */
+hr {
+    border-top: 2px solid #424242;
+    margin: 40px 0;
+}
+
+/* Index page subcontents styles */
+.subcontent > h1 {
+    color: #d3d3d3;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin-top: -5px;
+}
+.subcontent > p {
+    color: #b0bec5;
+    line-height: 1.8;
+}
+
+/* Header styles */
+header .navbar {
+    padding: 20px 0;
+    background-color: #1e1e1e;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #424242;
+}
+
+header .navbar-header a::first-letter {
+    border-bottom: 2px solid #90a4ae;
+}
+
+header .navbar-nav a {
+    color: #b0bec5;
+    padding-bottom: 12px;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Cool underline animation for nav menus */
+header .navbar-nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color: #90a4ae;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+header .navbar-nav a:hover::before {
+    transform: scaleX(1);
+}
+
+header .navbar-nav a:hover {
+    color: #ffffff;
+}
+
+/* Active menu item */
+header .navbar-nav .active a {
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: 2px solid #90a4ae;
+}
+
+/* Jumbotron style */
+.jumbotron { 
+    background-color: #1e1e1e;
+    color: #eceff1;
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px black;
+}
+
+/* Footer styles */
+footer { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e0e0e0;
+    line-height: 1.8;
+    background-color: #1e1e1e;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #424242;
+}
+
+.footerContent > .footerContent1 {
+    font-size: 36px;
+    line-height: 1.2;
+    color: #90a4ae;
+}
+
+.footerSubtext {
+    color: #90a4ae;
+}
+
+.footerContent > .footerSubtext2 {
+    color: #90a4ae;
+    font-size: 14px;
+}
+
+.footcontent {
+    color: #b0bec5;
+}
+
+/* Modal footer */
+.modal-footer {
+    padding: 15px;
+    border-top: 1px solid #424242;
+    background-color: #212121;
+}
+
+.icon {
+    font-size: 36px;
+    color: #90a4ae;
+}
+
+/* Modal body content */
+.modaltext1 h5 {
+    font-weight: bold;
+    color: #eceff1;
+}
+
+.modaltext1 p {
+    color: #b0bec5;
+}
+
+.modaltext2 {
+    color: #90a4ae;
+    margin-top: 20px;
+}
+
+/* Table hover effect */
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #616161;
+}
+
+/* Button styles */
+header .navbar-nav .btn {
+    color: #e0e0e0; /* Light text color */
+    padding: 8px 16px;
+    margin: 10px 0;
+    background-color: #424242; /* Dark gray background */
+    border: 1px solid transparent;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Submit button specific styles */
+button[type="submit"] {
+    background-color: #424242; /* Dark background for submit button */
+    color: #e0e0e0; /* Light text for the button */
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Submit button hover state */
+button[type="submit"]:hover {
+    background-color: #90a4ae; /* Light Sage Green on hover */
+    color: #121212; /* Dark text on hover */
+    border: 1px solid #b0bec5; /* Light border on hover */
+}
+
+/* Submit button active state */
+button[type="submit"]:active {
+    background-color: #616161; /* Darker gray when clicked */
+    color: #eceff1; /* Light text color */
+}
+
+/* Navigation links (Home, Register, Login, About Us, Contact Us) hover effect */
+header .navbar-nav a:hover {
+    background-color: #90a4ae; /* Moderate Sage Green */
+    color: #121212; /* Dark text on hover */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Error message styles */
+.error {
+    color: #ef5350;
+    font-weight: 600;
+}
+
+/* Contact us page styles */
+.contacts > h1 {
+    line-height: 2;
+    color: #90a4ae;
+}
+
+.contacts > p {
+    line-height: 1.8;
+    color: #b0bec5;
+}
+
+textarea {
+    resize: none;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #424242;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+
